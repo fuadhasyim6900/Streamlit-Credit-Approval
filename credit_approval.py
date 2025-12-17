@@ -262,7 +262,7 @@ profile_to_pred_prep = train_copy_with_profile_to_pred_prep.loc[train_copy_with_
 import os
 import requests
 
-MODEL_URL = "https://github.com/fuadhasyim6900/Streamlit-Credit-Approval/blob/main/gradient_boosting_tuned_new.pkl"
+MODEL_URL = "https://raw.githubusercontent.com/fuadhasyim6900/Streamlit-Credit-Approval/main/file/gradient_boosting_tuned_new.pkl"
 MODEL_PATH = "gradient_boosting_tuned_new.pkl"
 
 @st.cache_resource
@@ -294,5 +294,6 @@ if st.button("Predict"):
             st.balloons()
         else:
             st.error("## Unfortunately, you have not been approved for a credit card ❌")
+
 
 
